@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Odin Project Library</h1>
+        <button onclick="openForm()" class="add-book-btn">Add Book</button>
+        
+        <!-- The Modal Container -->
+        <div id="input-form" class="modal">
+
+            <!-- Modal content/form -->
+            <div class="modal-content">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required>
+                <div>
+                    <label for="read-status">Have Read?</label>
+                    <input type="checkbox" id="read-status" name="read-status" value="Read">
+                </div>
+                <button class="submit-book form-btn">Submit</button>
+                <button onclick="closeForm()" class="close form-btn">Close</button>
+            </div>    
+        </div>
+    </header>
+    <main>
+        <div class="book-grid">
+            <!-- Books will be dynamically added here -->
+        </div>
+    </main>
+    <script src="script.js" ></script>
+</body>
+</html>
