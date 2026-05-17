@@ -8,9 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Odin Project Library</h1>
-        <button onclick="openForm()" class="add-book-btn">Add Book</button>
+        <div class="header-h1">
+            <h1>Welcome to the Odin Project Library</h1>
+            <button onclick="openForm()" class="add-book-btn">Add Book</button>
+        </div>
         
+        <div>
+            <p>A place to store all the books you have read or plan to read.</p>
+        </div>
+         
         <!-- The Modal Container -->
         <div id="input-form" class="modal">
 
@@ -26,7 +32,7 @@
                     <label for="read-status">Have Read?</label>
                     <input type="checkbox" id="read-status" name="read-status" value="Read">
                 </div>
-                <button class="submit-book form-btn">Submit</button>
+                <button onclick="addBookToLibrary()" class="submit-book form-btn">Submit</button>
                 <button onclick="closeForm()" class="close form-btn">Close</button>
             </div>    
         </div>
